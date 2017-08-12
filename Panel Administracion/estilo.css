@@ -1,0 +1,200 @@
+/* CSS Document */
+#caja_login{
+border: 1px solid #e5e5e5;
+box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+margin: 0px auto;
+padding: 20px;
+width:40%;
+margin-bottom:20px;
+margin-top:20px;
+}
+#caja_registro{
+border: 1px solid #e5e5e5;
+box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+margin: 0px auto;
+padding: 20px;
+width:40%;
+margin-bottom:20px;
+margin-top:20px;
+}
+#caja_registro .info_mini{
+float:right;
+color:#666666;
+font-size:14px;
+}
+ul li a:hover{
+color:#999999;
+text-decoration:none; 
+}
+ul li a{
+color:#666666;
+text-decoration:none; 
+padding:1px;
+}
+.mdl-textfield{
+        display: block;
+        }
+.mdl-grid div{
+height: auto;
+font: normal 18px sans-serif;
+color: #333333;
+margin:auto;
+}
+#caja_login .mdl-button{
+display:block;
+margin:auto;
+margin-top:20px;}
+
+#caja_registro .mdl-button{
+display:block;
+margin:auto;
+margin-top:20px;}
+.cabecera .mdl-button{
+color:#FFFFFF; 
+}			
+
+.mdl-mini-footer{background:#FFFFFF;
+border-top:purple solid 1px;
+
+}
+.mdl-logo{color:#000000;
+}
+/*form*/
+h4{
+text-align:center;
+color:#999999;
+}
+#msg{margin-top: 15px;}
+#msg-reg{margin-top: 15px;}
+
+/*success */
+.info, .correcto, .ojo, .error {
+    border: 1px solid;
+    margin: auto;
+	margin-top:20px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    text-align:left;
+    width:auto;
+	display:block;
+	z-index: 1;
+}
+.correcto {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('../img/correcto.jpg');
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../img/error.jpg');
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('../img/info.jpg');
+}
+.ojo {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('../img/ojo.jpg');
+}
+#caja_login_centrar {
+  text-align:center;
+}
+#caja_login_centrar p{
+  color:#999999;
+  padding:0.5px;
+}
+
+.centrar {
+  color:#999999;
+  text-decoration:none;
+}
+.centrar:hover{
+  color:#00CC33;
+  text-decoration:none;
+}
+.timer{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-image: url('loader.gif');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+#alertBoxes{
+	display: block;
+	width: 500px;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.disabled{
+	display: none;	
+	}
+@media screen and (min-width: 200px) {
+#caja_login{
+border: 1px solid #e5e5e5;
+box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+margin: 0px auto;
+padding: 20px;
+width:80%;
+margin-bottom:20px;
+margin-top:20px;
+}
+#caja_registro{
+border: 1px solid #e5e5e5;
+box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+margin: 0px auto;
+padding: 20px;
+width:80%;
+margin-bottom:20px;
+margin-top:20px;
+}
+}
+@media screen and (min-width: 600px) {
+#caja_login{
+border: 1px solid #e5e5e5;
+box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+margin: 0px auto;
+padding: 20px;
+width:60%;
+margin-bottom:20px;
+margin-top:20px;
+}
+#caja_registro{
+border: 1px solid #e5e5e5;
+box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+margin: 0px auto;
+padding: 20px;
+width:60%;
+margin-bottom:20px;
+margin-top:20px;
+}
+
+}
+@media screen and (min-width: 960px) {
+#caja_login{
+border: 1px solid #e5e5e5;
+box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+margin: 0px auto;
+padding: 20px;
+width:40%;
+margin-bottom:20px;
+margin-top:20px;
+}
+#caja_registro{
+border: 1px solid #e5e5e5;
+box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+margin: 0px auto;
+padding: 20px;
+width:40%;
+margin-bottom:20px;
+margin-top:20px;
+}
+
+}

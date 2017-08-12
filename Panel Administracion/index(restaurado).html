@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es">
+        <meta charset="UTF-8">
+        <title>Panel de Administración</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/mdl.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/estilo.css">
+          
+     
+    </head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+ 
+        <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Left aligned menu below button -->
+                <button id="demo-menu-lower-left"
+                        class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                 
+                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                    for="demo-menu-lower-left">
+                    <li class="mdl-menu__item"><a href="index.html"Inicio</a></li>
+                    <li class="mdl-menu__item"><a href="registro.html">registro</a></li>                
+                    <li disabled class="mdl-menu__item">Panel</li>
+                </ul>
+                </div><!--mdl-layout__header-row-->
+        </header><!--mdl-layout__header-->
+        <!--main class="mdl-layout__content">-->
+    <div class="page-content">
+        <div class="mdl-grid">
+             
+            <div class="mdl-cell mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+                <div id="caja_login">
+                     
+                    <h4>Inicie sesión</h4>
+                    <form id="login" method="post" action="<?php echo URL; ?>login.php" >
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <label for="input_email" class="mdl-textfield__label">Email</label>
+                        <input type="email" class="mdl-textfield__input" id="correo" name="correo_user" autocomplete="off" />
+                        <span class="mdl-textfield__error">Ingrese un correo válido</span>
+                    </div>
+                 
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <label for="input_password" class="mdl-textfield__label">Password</label>
+                        <input type="password" class="mdl-textfield__input" id="password" name="pass_user" />
+                        <span class="mdl-textfield__error">Íngrese solo letras y números</span>
+                    </div>
+ 
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label disabled">
+                        <label for="input_password" class="mdl-textfield__label">Codigo de verificación</label>
+                        <input type="password" pattern="[A-Z,a-z,0-9]*" class="mdl-textfield__input" id="cod_ver" name="cod_ver" />
+                        <span class="mdl-textfield__error">Íngrese solo letras y números</span>
+                    </div>
+                    <button id="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                    Login
+                    </button>
+                    <!--si encontramos errores los mostramos-->
+                    <div id="msg"></div>
+ 
+                    </form>
+                     
+                </div><!--caja-login-->
+            </div><!--mdl-csll-->
+ 
+        </div><!--mdl-grid-->
+    </div><!--page content-->
+<!--/main>-->
+     <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+            <ul class="mdl-mini-footer__link-list">
+                <li><a target="_blank" href="#">Contáctenos</a></li>
+                <li><a target="_blank" href="#">| Ayuda</a></li>
+            </ul>
+        </div>
+     </footer>
+ 
+    </div><!--mdl-layout-->
+ 
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="<?php echo URL; ?>/js/script.js"></script>
+    <script type="text/javascript" src="<?php echo URL; ?>/js/jquery.ui.shake.js"></script>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <script src="https://js.pusher.com/3.1/pusher.min.js"></script>
+    <script>
+ 
+    // Enable pusher logging - don't include this in production
+    Pusher.logToConsole = true;
+ 
+    var pusher = new Pusher('eb4cf8934399c867cb43', {
+      encrypted: true
+    });
+ 
+    var channel = pusher.subscribe('test_channel');
+    channel.bind('my_event', function(data) {
+      alert(data.message);
+    });
+  </script>
+</body>
+</html>
