@@ -407,7 +407,11 @@ footer{
 .link-pdf{
 	color: #777 !important;
 }
-
+.contact-text .link-pdf {
+	text-decoration: none;
+}#link-pdf:hover {
+	color: #dd4b39;
+}
 .list-menu-bottom{
 	list-style: none;
 	font-size: 30px;
@@ -457,7 +461,6 @@ footer{
 #google:hover{
 	color: #dd4b39;
 }
-
 #facebook:hover{
 	color: #3b5998;
 }
