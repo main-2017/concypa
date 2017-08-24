@@ -349,10 +349,15 @@
 }
 
 .title-mision{
-	text-align: left;
-	color: #000;
+	text-align: center;
+	color: #FFF;
 	font-size: 1.5em;
 	letter-spacing: 2px;
+	padding-bottom: 10px;
+}
+
+.texto-mision, .texto-vision{
+	color: #FFF;
 }
 
 .position-wrapper{
@@ -372,10 +377,11 @@
 }
 
 .title-vision{
-	text-align: right;
-	color: #000;
+	text-align: center;
+	color: #FFF;
 	font-size: 1.5em;
 	letter-spacing: 2px;
+	padding-bottom: 10px;
 }
 
 .bloque-proyectos{
@@ -407,11 +413,15 @@ footer{
 .link-pdf{
 	color: #777 !important;
 }
+
 .contact-text .link-pdf {
 	text-decoration: none;
-}#link-pdf:hover {
+}
+
+#link-pdf:hover {
 	color: #dd4b39;
 }
+
 .list-menu-bottom{
 	list-style: none;
 	font-size: 30px;
@@ -495,6 +505,21 @@ footer{
 	.column-left,.column-right{
 		height: 1600px;
 	}
+
+	.position-wrapper, .position-wrapper-2{
+		clear: both;
+		width: 100%;
+		margin: 0px 20px;
+	}
+
+	.title-vision, .title-mision{
+		font-size: 14px;
+	}
+
+	.texto-vision, .texto-mision{
+		font-size: 10px;
+	}
+
 }
 
 @media(max-width: 1247px){
@@ -652,6 +677,28 @@ footer{
 		background: -ms-linear-gradient(45deg, rgba(41,81,129,1) 0%, rgba(61,72,117,1) 100%);
 		background: linear-gradient(45deg, rgba(41,81,129,1) 0%, rgba(61,72,117,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#295181', endColorstr='#3d4875', GradientType=1 );
+	}
+
+	.text-right, .text-left{
+		text-align: center !important;
+		margin: 20px;
+		width: 90%;
+	}
+
+	.texto-vision, .texto-mision{
+		font-size: 8px !important;
+	}
+
+	.position-wrapper{
+		left: 0px;
+	}
+
+	.position-wrapper-2{
+		right: 0px;
+	}
+
+	.title-vision, .title-mision{
+		text-align: center !important;
 	}
 
 }
